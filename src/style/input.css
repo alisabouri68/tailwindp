@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    @font-face {
+        font-family: dana;
+        src: url('../fonts/DanaFaNum-Medium.woff2');
+    }
+}
+
+
+body{
+    @apply font-['dana']
+}
+.circle::before {
+    @apply content-[''] bg-[url("../img/Central_Curve_shadow2.svg")] w-[365px] h-[300px] m-auto  inline-block absolute bg-contain bg-no-repeat -z-0 top-[-107px] right-0 left-0 ;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    @apply text-base text-white font-semibold
+}
+
+
+
